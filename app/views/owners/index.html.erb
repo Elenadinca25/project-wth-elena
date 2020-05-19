@@ -1,0 +1,5 @@
+<% @owners.each do |owner| %>
+
+<h5><%= link_to "#{owner.name}", owner_path(owner.id) %><h5>
+
+<% end %>

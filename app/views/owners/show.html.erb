@@ -1,0 +1,8 @@
+<h1> Name: <%= @owner.name %></h1>
+
+
+<nav><% @owner.adoptions.each do |adoption|%></nav>
+<h5><strong> Adoption Name: <%= link_to  "#{adoption.name}", adoption_path(adoption.id) %></strong></h5>
+<%end%>
+
+<%= link_to  "Back", owners_path %>
